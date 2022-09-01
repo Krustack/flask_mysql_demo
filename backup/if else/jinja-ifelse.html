@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--if else-->
+    <img src="../static/images/crulogo.png" style="width: 200px">
+    <h1>Basic Jinja template</h1>
+    <!-- การใช้ if-else jinja -->
+    {% if school.grade == student.grade %}
+    <h3>กำลังศึกษาโปรแกรม {{school.subject}}</h3>
+    {% else %}
+    <h3>คุณยังไม่พร้อมที่จะเรียน {{school.subject}}</h3>
+    {% endif %}
+</body>
+</html>

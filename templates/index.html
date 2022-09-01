@@ -1,0 +1,27 @@
+{% extends "bootstraptem.html" %}
+{% set active_page = "Home" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 style="text-align: center">flask frameworks Home</h1>
+            <div class="col-4 d-block mx-auto mb-5">
+                <h3>เข้าสู่ระบบผู้ใช้</h3>
+                <div>
+                    <form action="{{url_for('login')}}" method="post">
+                        <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="text" name="username">
+                        <label for="floatingInput">username</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2 float-end" value="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

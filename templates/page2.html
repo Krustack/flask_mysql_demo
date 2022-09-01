@@ -1,0 +1,12 @@
+{% extends "bootstraptem.html" %} 
+{% set active_page = "page2" %} 
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 style="text-align: center">flask frameworks page2</h1>
+      {{session['username']}}
+    </div>
+  </div>
+</div>
+{% endblock %}
