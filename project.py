@@ -37,7 +37,7 @@ def insert():
         cursor.execute(''' INSERT INTO user VALUES(%s,%s)''',(username,password))
         mysql.connection.commit()
         cursor.close()
-        return redirect(url_for('hello'))
+        return redirect(url_for('hello hello'))
         
 
 app.run(debug=True)
